@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+{% block body %}
+<style>
+    .question-groups {
+        color: blue;
+    }
+</style>
+Hi {{session['logged_in_user']}}, create a question <a href="/create_question">here</a>
+<h1>Questions</h1>
+<div id="question_container"></div>
+<script>
+
+    var groups = {{groups|safe}};
+    var questions = {{questions|safe}};
+    admin.renderQuestionList(groups, questions, document.getElementById('question_container'));
+</script>
+{% endblock %}

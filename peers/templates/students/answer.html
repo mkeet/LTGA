@@ -1,0 +1,23 @@
+{% extends "master.html" %}
+{% block navbar %}{% endblock %}
+{% block body %}
+<form action="/answer/{{question.id}}" method="post">
+<div class="">
+    <h1 class="form-signin-heading">
+        {{question.question|markdown}}
+    </h1>
+    {% if question.image_filename %}
+    <a href="/uploads/{{question.image_filename}}">
+        <img src="/uploads/{{question.image_filename}}" width="100%"></a>
+    {% endif %}
+    {% for answer in run.answers %}
+    <label class="radio" style="width: 98%">
+        <input name="answer" value="{{answer.answer}}" type="radio">
+        {{answer.answer|markdown}}
+    </label>
+    <hr />
+    {% endfor %}
+    <input type="submit" value="Submit Answer" />
+</div>
+</form>
+{% endblock %}

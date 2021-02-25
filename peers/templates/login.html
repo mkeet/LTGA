@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+{% block body %}
+<form 
+    action="/do_login"
+    method="post"
+    class="form-signin">
+    <h1 class="form-signin-heading">Please sign in</h1>
+    <h3>or <a href="/register">register if you do not have an account</a></h3>
+{% if error %}
+<p style="color: red">Your username or password was incorrect</p>
+{% endif %}
+    <label class="" for="username">Username
+    </label>
+    <div class="form-group">
+        <input class="form-control" type="text" name="username" required autofocus />
+    </div>
+    <label class="" for="password">
+        Password
+    </label>
+    <div class="form-group">
+        <input class="form-control" type="password" name="password" />
+    </div>
+    <input type="submit" class="login-button" value="Log In" />
+</form>
+{% endblock %}

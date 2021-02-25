@@ -1,0 +1,22 @@
+{
+  "name": "peer-instruction",
+  "version": "1.0.0",
+  "description": "maria's peer instruction thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:randomn3ss/peer-instruction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.0",
+    "react": "^0.13.3",
+    "react-dnd": "^1.1.4",
+    "reactify": "^1.1.1"
+  }
+}

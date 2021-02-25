@@ -1,0 +1,8 @@
+{% extends "master.html" %}
+{% block body %}
+    {{ question}}
+    <form method="post">
+        <input name="confirm" type="submit" value="Confirm" />
+        <input name="deny" type="submit" value="Deny" />
+    </form>
+{% endblock %}

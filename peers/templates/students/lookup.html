@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+{% block navbar %}{% endblock %}
+{% block body %}
+<form action="/lookup" method="post">
+    <h1 class="form-signin-heading">
+        Enter your ID
+    </h1>
+    {% if error %}
+    <p style="color: red">
+        {{error}}
+    </p>
+    {% endif %}
+    <input type="text" name="question_id" placeholder="Question ID" class="form-control" />
+    <input type="submit" value="Go" />
+</form>
+{% endblock %}

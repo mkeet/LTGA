@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+{% block body %}
+<form 
+    method="post" 
+    id="question-editor" 
+    action="/admin/edit/{{question.id}}" 
+    enctype="multipart/form-data"
+    class="form-signin">
+</form>
+<script>
+    peers.renderQuestionEditor(
+    "{{question.question|safe}}",
+    {{ potential_answers|safe}},
+    document.getElementById('question-editor'));
+</script>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "master.html" %}
+{% block navbar %}
+{% endblock %}
+{% block body %}
+
+<a href="/">Back</a>
+<center><h1>{{question.question|markdown}}</h1></center>
+<hr />
+<div class="row">
+    <div class="col-md-7">
+        <h2>
+            Vote at <a href="http://goanswer.co.za">http://goanswer.co.za</a><br />
+            And enter code: <span style="font-size: 50px">{{question.id}}</span>
+        </h2>
+        <div id="show-results" width="100%">
+            <canvas id="results-chart" width="600px" height="300px" ></canvas>
+            <p>
+            <a onclick="chart.chartDisplay(false); return false;">Hide Chart</a>
+        </div>
+        <div id="hide-results">
+            <a onclick="chart.chartDisplay(true); return false;">Show Chart</a>
+        </div>
+        <h2>Responses: <span id="num_responses">{{question.responses}}</span></h2>
+        <p><a href="/students/question/{{question.id}}">Vote here </a></p>
+        <p><a href="/admin/edit/{{question.id}}">Edit Question </a></p>
+        <p><a href="/admin/reset/{{question.id}}">Reset Question </a></p>
+        {% if expired %}
+            <p><a href="/admin/open/{{question.id}}">Reopen Question </a></p>
+        {% else %}
+            <p><a href="/admin/close/{{question.id}}">Close Question </a></p>
+        {% endif %}
+        <p><a href="/admin/delete/{{question.id}}">Delete Question</a></p>
+        <p><a href="/admin/export/{{question.id}}.csv">Export Question</a></p>
+    </div>
+    <div class="col-md-5">
+        {% if question.image_filename %}
+        <a href="/uploads/{{question.image_filename}}">
+            <img src="/uploads/{{question.image_filename}}" width="100%"></a>
+        {% endif %}
+        {% for answer in answers %}
+        <h3 class="question-list">{{answer|markdown}}</h3>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="/static/Chart.js"></script>
+<script>
+questionId = {{question.id|safe}};
+chartData = {{chartData|safe}};
+console.log(chart);
+chart.setupChart();
+</script>
+{% endblock %}
