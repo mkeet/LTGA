@@ -14,34 +14,48 @@ See the txt file.
 In addition: the python virtualenv is not included. It can be recreated from the requirements.txt and the alembic database schema  migration configuration and data layer. 
 Also, the database password is embedded in peers/db.py, so in this code, it is changed to 'putyourpasswordhere'.
 
-## Examples
+## Examples (screenshots)
 
-Administration interface; top of the page: [Question administration interface for the lecturer]
+Administration interface; top of the page: <img src="http://www.meteck.org/files/ltga/newAdmin.png">
 
-
-Administration interface; somewhere further down on the page, using question groups to organise the questions by topic (questions can be moved between groups by draging and dropping them): [Question administration interface for the lecturer]
-
-
-Administration interface; editing a question in the admin interface: [Editing a question]
+You also can create question groups to organise the questions by topic and questions can be moved between groups by draging and dropping them.
 
 
-Simple question, hiding and showing the results, respectively: [Question and hidden restults] [Question adn restults shown]
+Administration interface; editing a question in the admin interface: 
+
+<img src="http://www.meteck.org/files/ltga/Qcreation-finish.png">
 
 
-The same simple question in Spanish, mainly to show that diacritics indeed are supported (apologies for any translation errors): [simple question in Spanish, with diacritics]
+Simple question, hiding and showing the results, respectively: 
+
+<img src="http://www.meteck.org/files/ltga/simpleQresultsHidden.png">
+
+<img src="http://www.meteck.org/files/ltga/simpleQresultsShown.png">
 
 
-Question with figure and math display (and closed after voting): [Question with figure and math display]
+The same simple question in Spanish, mainly to show that diacritics indeed are supported (apologies for any translation errors): 
+
+<img src="http://www.meteck.org/files/ltga/simpleQinSpanishDiacritics.png">
+
+
+Question with figure and math display (and closed after voting): 
+
+<img src="http://www.meteck.org/files/ltga/congestionwPicAndMath.png">
 
 
 Answering a question - entering the question ID:
-[Answering a question - entering the question ID]
+
+<img src="http://www.meteck.org/files/ltga/answer.png">
 
 
-Answering a question (screenshot from the desktop interface; it works on the mobile as well): [Answering a question]
+Answering a question (screenshot from the desktop interface; it works on the mobile as well): 
+
+<img src="http://www.meteck.org/files/ltga/q26voteinterface.png">
 
 
-Results are exported in csv and can be easily read into, say, OpenOffice's spreadsheet software, where the "Run" indicates the session (one can open, close, and reset the questions): [Viewing exproted restults]
+Results are exported in csv and can be easily read into, say, OpenOffice's spreadsheet software, where the "Run" indicates the session (one can open, close, and reset the questions): 
+
+<img src="http://www.meteck.org/files/ltga/resultsQ26.png">
 
 
 ## Publications and dissemination
