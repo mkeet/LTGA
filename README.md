@@ -57,6 +57,13 @@ Results are exported in csv and can be easily read into, say, OpenOffice's sprea
 
 <img src="http://www.meteck.org/files/ltga/resultsQ26.png">
 
+## People
+
+* <a href="http://www.meteck.org">Maria Keet</a> (PI), University of Cape Town (UCT)
+* <a href="https://www.linkedin.com/in/yaseen-hamdulay-88766437/">Yaseen Hamdulay</a>, programmer (a CS Honours Student at UCT at the time now engineer at Google)
+* There were CSC3002F networks block students who attended lectures at UCT where this was used and 'live tested'
+* Input into the tool's requirements also from James Gain and Ian Schroeder at UCT
+
 
 ## Publications and dissemination
 
