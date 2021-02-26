@@ -7,12 +7,18 @@ Project page: http://www.meteck.org/files/ltga/
 We aim to develop an ARS that has, at least, the following features: including figures, mathematical formula, proper HTML text--for display of diacritics--saving of the voting results of a session, display and saving of results (among others). It also has to be super easy to work with, fast, and with as few mouse-clicks as possible.
 The core outcome of the project is a web-accessible ARS that can cater for various disciplines within one software system and that is simple and fast to work with. 
 
-## Installation notes
+## Installation and usage notes
 
 See the txt file. 
 
 In addition: the python virtualenv is not included. It can be recreated from the requirements.txt and the alembic database schema  migration configuration and data layer. 
 Also, the database password is embedded in peers/db.py, so in this code, it is changed to 'putyourpasswordhere'.
+
+For the 'voting' page, the interface still says goanswer.co.za (see also screenshots below), but I stopped paying for the domain name (project funding ran out). You'll have to change that, too. 
+
+Our current installation runs on a CS server at http://click.cs.uct.ac.za. Participants still can vote, but then have to use a different URL, like http://click.cs.uct.ac.za/students/question/96 for question 96 (rather than the goanswer.co.za), and for your installation it will be whatever the domain name of your instalaltion is.
+
+For this current installation, there are a few loose ends, like don't lose your login (there's no password recovery) and at least a few computer science students in class always manage to find a way to vote multiple times (it won't happen with 'regular' participants).
 
 ## Examples (screenshots)
 
